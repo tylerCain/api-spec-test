@@ -4,13 +4,12 @@ import Home from "./routes/home"
 import APISpec from "./routes/apiSpec"
 import HomeBar from "./navbar/navbar"
 
-
 function App() {
   return (
-    <BrowserRouter basename="/home">
+    <BrowserRouter>
       <HomeBar />
       <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/spec1" element={<APISpec url="https://petstore3.swagger.io/api/v3/openapi.json" />} />
       </Routes>
     </BrowserRouter>
