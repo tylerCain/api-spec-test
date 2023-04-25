@@ -1,33 +1,13 @@
 <html>
   <head>
-    <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
-    <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
+    <script type="module" src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css" />
     <title>API-spec.json Viewer</title>
   </head>
   <body>
     <div id="swagger-ui"></div>
-    <script defer>
-      window.onload = function () {
-        const ui = SwaggerUIBundle({
-          urls: [
-            {
-              name: "Example 1",
-              url: "api-spec.json",
-            },
-            {
-              name: "Example 2",
-              url: "api-spec1.json",
-            },
-          ],
-          dom_id: "#swagger-ui",
-          deepLinking: true,
-          presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
-          plugins: [SwaggerUIBundle.plugins.DownloadUrl],
-          layout: "StandaloneLayout",
-        });
-        window.ui = ui;
-      };
+    <script>
+      swaggerUI()
     </script>
     <style>
       .swagger-ui .topbar .download-url-wrapper input[type="text"] {
