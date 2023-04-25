@@ -1,10 +1,10 @@
 import SwaggerUI from "swagger-ui-react"
+import HomeBar from "../navbar/navbar"
 
 const APISpec = ({ url }) => (
-  //Add back button
-  <div className="App">
-    <SwaggerUI url={url} />
-  </div>
+    <div className="App">
+      <SwaggerUI url={url} />
+    </div>
 )
 
 export default APISpec
