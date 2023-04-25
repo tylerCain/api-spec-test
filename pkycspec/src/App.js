@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <HomeBar />
       <Routes>
-          <Route index element={<Home />} />
+          <Route path="/" index element={<Home />} />
           <Route path="/spec1" element={<APISpec url="https://petstore3.swagger.io/api/v3/openapi.json" />} />
       </Routes>
     </BrowserRouter>
