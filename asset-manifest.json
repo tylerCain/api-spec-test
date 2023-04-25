@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/api-spec-test/static/css/main.cde39250.css",
+    "main.js": "/api-spec-test/static/js/main.c431ceb5.js",
+    "index.html": "/api-spec-test/index.html",
+    "main.cde39250.css.map": "/api-spec-test/static/css/main.cde39250.css.map",
+    "main.c431ceb5.js.map": "/api-spec-test/static/js/main.c431ceb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cde39250.css",
+    "static/js/main.c431ceb5.js"
+  ]
+}
