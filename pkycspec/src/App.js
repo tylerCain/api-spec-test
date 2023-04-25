@@ -7,10 +7,10 @@ import HomeBar from "./navbar/navbar"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/home">
       <HomeBar />
       <Routes>
-          <Route path="/" index element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/spec1" element={<APISpec url="https://petstore3.swagger.io/api/v3/openapi.json" />} />
       </Routes>
     </BrowserRouter>
